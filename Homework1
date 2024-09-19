@@ -1,7 +1,7 @@
 1.	Which of the following protocols are shown as appearing (i.e., are listed in the Wireshark “protocol” column) in your trace file: TCP, QUIC, HTTP, DNS, UDP, TLSv1.2?
 HTTP
 2.	How long did it take from when the HTTP GET message was sent until the HTTP OK reply was received? (By default, the value of the Time column in the packet-listing window is the amount of time, in seconds, since Wireshark tracing began.  (If you want to display the Time field in time-of-day format, select the Wireshark View pull down menu, then select Time Display Format, then select Time-of-day.)
-0.000612
+0.000612 second
 3.	What is the Internet address of the gaia.cs.umass.edu (also known as www-net.cs.umass.edu)?  What is the Internet address of your computer or (if you are using the trace file) the computer that sent the HTTP GET message?
 To answer the following two questions, you’ll need to select the TCP packet containing the HTTP GET request (hint: this is packet number 286 ). The purpose of these next two questions is to familiarize you with using Wireshark’s “Details of selected packet window”; see Figure 3.  To do this, click on Packet 286 (your screen should look similar to Figure 3).  To answer the first question below, then look in the “Details of selected packet” window toggle the triangle for HTTP (your screen should then look similar to Figure 5); for the second question below, you’ll need to expand the information on the Transmission Control Protocol (TCP) part of this packet.
 Src: 192.168.72.244 Dst:61.91.166.33
