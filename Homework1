@@ -1,0 +1,18 @@
+1.	Which of the following protocols are shown as appearing (i.e., are listed in the Wireshark “protocol” column) in your trace file: TCP, QUIC, HTTP, DNS, UDP, TLSv1.2?
+HTTP
+2.	How long did it take from when the HTTP GET message was sent until the HTTP OK reply was received? (By default, the value of the Time column in the packet-listing window is the amount of time, in seconds, since Wireshark tracing began.  (If you want to display the Time field in time-of-day format, select the Wireshark View pull down menu, then select Time Display Format, then select Time-of-day.)
+0.000612
+3.	What is the Internet address of the gaia.cs.umass.edu (also known as www-net.cs.umass.edu)?  What is the Internet address of your computer or (if you are using the trace file) the computer that sent the HTTP GET message?
+To answer the following two questions, you’ll need to select the TCP packet containing the HTTP GET request (hint: this is packet number 286 ). The purpose of these next two questions is to familiarize you with using Wireshark’s “Details of selected packet window”; see Figure 3.  To do this, click on Packet 286 (your screen should look similar to Figure 3).  To answer the first question below, then look in the “Details of selected packet” window toggle the triangle for HTTP (your screen should then look similar to Figure 5); for the second question below, you’ll need to expand the information on the Transmission Control Protocol (TCP) part of this packet.
+Src: 192.168.72.244 Dst:61.91.166.33
+4.	Expand the information on the HTTP message in the Wireshark “Details of selected packet” window (see Figure 3 above) so you can see the fields in the HTTP GET request message. What type of Web browser issued the HTTP request?  The answer is shown at the right end of the information following the “User-Agent:” field in the expanded HTTP message display. [This field value in the HTTP message is how a web server learns what type of browser you are using.]
+•	Firefox, Safari, Microsoft Internet Edge, Other
+Microsoft bits
+5.	Expand the information on the Transmission Control Protocol for this packet in the Wireshark “Details of selected packet” window (see Figure 3 in the lab writeup) so you can see the fields in the TCP segment carrying the HTTP message. What is the destination port number (the number following “Dest Port:” for the TCP segment containing the HTTP request) to which this HTTP request is being sent?
+61.91.166.33
+And finally ...
+
+6.	Print the two HTTP messages (GET and OK) referred to in question 2 above. To do so, select Print from the Wireshark File command menu, and select the “Selected Packet Only” and “Print as displayed” radial buttons, and then click OK.
+
+No.	Time	Source	Destination	Protocol	Length	Info
+43278	99.788219	192.168.72.244	61.91.166.33	HTTP	375	GET /pr/f2e724c1-748f-4b47-8fb8-8e0d210e9208/Office/Data/16.0.10414.20002/stream.x64.x-none.dat HTTP/1.1 
